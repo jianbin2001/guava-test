@@ -39,6 +39,6 @@ public class PreconditionsTest {
 	@Test(expected = IllegalStateException.class)
 	public void test004_checkState() {
 		int age = 9;
-		Preconditions.checkState(age >= 10, "age must greate than 10", age);
+		Preconditions.checkState(age >= 10, "age %s must greate than 10", age);
 	}
 }
